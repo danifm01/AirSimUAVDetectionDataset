@@ -9,6 +9,8 @@ El código para la generación del dataset se puede encontrar en el siguiente re
 
 https://github.com/danifm01/airsimDronDatabaseGenerator
 
+Se han tomado imágenes con distancias del dron de entre 2.5 m y 37.5m siendo la proporción de tomas realizadas creciente según aumenta la distancia.
+
 El dataset contiene los datos de profundidad de cada imagen para cada pixel guardado en archivos .npy. Estos archivos se deben abrir utilizando la librería numpy de python. Se encuentran los datos de profundidad tanto de perspectiva (DepthPerspective), como planar (DepthPlanner), así como imágenes para facilitar su visualización (DephtVis).
 
 La estructura de árbol de las carpetas utilizadas en el dataset es la siguiente:
