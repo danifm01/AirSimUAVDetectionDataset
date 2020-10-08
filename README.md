@@ -1,5 +1,7 @@
 # AirSimUAVDetectionDataset
-El conjunto de datos generado se compone por imágenes de 6 entornos de AirSim: Africa, Neighborhood, City, Building99, Zhangjiajie y Blocks.
+El conjunto de datos generado se compone por imágenes de 6 entornos de AirSim: Africa, Neighborhood, City, Building99, Zhangjiajie y Blocks. Se pueden encontrar en el siguient enlace:
+
+https://drive.google.com/drive/folders/1xbUYiXEVf7ymAYsqAbO9bdFb10I8yJVS?usp=sharing
 
 Este dataset contiene 11.510 imágenes del Ardrone generadas a través del simulador Airsim en 6 entornos diferentes: AirSim: Africa, Neighborhood, City, Building99, Zhangjiajie y Blocks. Tiene un tamaño total descomprimido de 440 GB.
 
@@ -30,3 +32,5 @@ En las carpetas ImagenesBoundingBox e ImagenesMarcadas se encuentran las imágen
 Por último, en la carpeta Parámetros se encuentran los archivos .csv con la información característica de cada imagen. En cada entorno se encuentra el archivo que contiene a todas las imágenes de ese entorno y todas las anteriores (a modo de copia de seguridad) con el nombre Parametros.csv y los archivos individuales de cada entorno anterior (siguiendo la numeración).
 
 Los parámetros que se han extraído para cada imágen son: la distancia en metros de la cámara al dron (distancia), la dirección en la que se encuentra el dron según ángulos de euler (phi, theta) en grados, las coordenadas en pixeles del centro del dron (xIma, yIma), el radio en pixeles que se estima del dron (radioIma), las coordenadas del bounding box en pixeles (x1BB, y1BB, x2BB, y2BB), la orientación absoluta en forma de quaternion del dron en que se situa la cámara (orientacionVisor\_), la orientación absoluta del dron visto por la cámara (orientacionVisto\_) y la orientación relativa del dron visto según el dron visor (orientacionRelativa).
+
+En el archivo example.py se muestran algunas estructuras para cargar y mostrar los parámetros del archivo .csv, así como para cargar la información de profundidad pura de una imagen y mostrarla como imagen de profundidad.
